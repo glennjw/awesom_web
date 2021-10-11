@@ -1,0 +1,352 @@
+<html><head>
+    <title id="logo">Urban Heat Analysis</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/awesomSense.css">
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+<style>.serp-FFHUuI {
+display: block !important;
+margin: 10px 0 10px 0;
+float: none;
+font-size: small !important;
+cursor: pointer;
+}
+.serp__text-38uZ11 {
+font-family: -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', Helvetica, Arial, Verdana, Tahoma, sans-serif !important;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px;
+min-height: 18px;
+vertical-align: top;
+color: #f16c2d;
+display: block !important;
+margin: 0;
+padding: 0 0 0 24px;
+background: none;
+cursor: normal;
+text-decoration: none;
+}
+.serp__text-38uZ11:hover {
+text-decoration: underline;
+}
+.serp__button-1t7VKO {
+display: flex;
+float: left;
+border: 1px solid #ccc;
+padding: 3px 5px 3px 3px;
+border-radius: 5px;
+margin-top: -3px;
+margin-right: 7px;
+color: green;
+font-weight: 600;
+font-family: -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', Helvetica, Arial, Verdana, Tahoma, sans-serif;
+line-height: 18px;
+font-size: 13px;
+}
+.serp__logo-1fX-NB {
+background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpGNzRCNDAzMjZFQzYxMUVBOTQxNUQwNTdFMTdCODMxMSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpGNzRCNDAzMzZFQzYxMUVBOTQxNUQwNTdFMTdCODMxMSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkY3NEI0MDMwNkVDNjExRUE5NDE1RDA1N0UxN0I4MzExIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkY3NEI0MDMxNkVDNjExRUE5NDE1RDA1N0UxN0I4MzExIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8++pzE8AAACY5JREFUeNpsWAtw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);
+float: left;
+width: 18px;
+height: 18px;
+margin: 0;
+padding: 0;
+background-size: 100%;
+background-position: center;
+background-repeat: no-repeat;
+margin-right: 5px;
+}
+</style><link rel="stylesheet" type="text/css" href="chrome-extension://pcihjlbjjghnbohanlafcldoddloecfo/content/styles.css"><script>(function(t){const e=Event.prototype.stopImmediatePropagation;Event.prototype.stopImmediatePropagation=function(){var s;if((null===(s=this.target)||void 0===s?void 0:s.className)!==t)return e.call(this)}})("sidekick-slider")</script></head>
+<body class="landing" data-new-gr-c-s-check-loaded="14.1032.0" data-gr-ext-installed="">
+
+    <!-- Header -->
+        <div id="header" class="alt">	
+            <nav id="nav">
+                <ul>
+                    <li style="white-space: nowrap;"><a href="#overview" class="button alt">Overview</a></li>
+                    <li style="white-space: nowrap;"><a href="#people" class="button alt">People</a></li>
+                    <li style="white-space: nowrap;"><a href="#publications" class="button alt">Publications</a></li>
+                    <li style="white-space: nowrap;"><a href="#workshops" class="button alt">Workshops</a></li>
+                    <li style="white-space: nowrap;"><a href="#contact" class="button alt">Contact US</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    <!-- Banner -->
+        <section id="banner">
+    
+            <h2>Urban Heat Analysis</h2>
+            <p>SCOUTS: Smart COmmunity Urban Thermal Sensing</p>
+        
+            <ul class="actions">
+                <li><a href="https://nsf.gov/awardsearch/showAward?AWD_ID=1637277&amp;HistoricalAwards=false" class="button special" target="_blank">NSF Funded Project</a></li>
+            </ul>
+
+    <iframe width="70%" height="80%" src="https://www.youtube.com/embed/sykr9ymwrZQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+            <ul class="actions">
+                <li><a href="https://apps.apple.com/us/app/uhiscouts/id1362051982"><img src="images/app_store.png" alt="App Store" width="179" height="65" border="0"></a></li>
+                <li><a href="https://play.google.com/store/apps/details?id=edu.uga.UHISCOUTS&amp;hl=en_US"><img src="images/google_play.png" alt="Google Play" width="179" height="65" border="0"></a></li>
+            </ul>
+        </section>
+
+    <!-- One -->
+        <section id="one" class="wrapper style1">
+            <div class="container">
+                <section class="feature">
+                    <div class="row 200%"><div class="4u$ 12u$(medium) important(medium)">
+                            <span class="image fit rounded">
+                                <img src="images/1.jpg" alt="" class="rounded">
+                            </span>
+                        </div>
+                        <div class="8u 12u$(medium)">
+                            <header class="major">
+                                <a name="overview"><h2>Project Overview</h2></a>
+                                <p>Abstract</p>
+                            </header>
+                            <p>This project will analyze how smart and pervasive devices including human and vehicle-borne sensors can be harnessed to effectively map and identify urban heat islands (UHIs), and mitigate UHI associated risks on various communities. Excessive generation and retention of heat in urban areas by the built environment results in UHIs. Driven by climate change, extreme heat events are increasingly posing a major health hazard to many urban communities in U.S. and around the world. Studies analyzing the impact of UHIs on communities have primarily focused on generating coarse grained heat maps of cities using satellite or weather station data, and correlating heat events with human mortality and morbidity data. This exploratory project will develop and test a prototype community-centric approach to urban heat vulnerability research. Focusing on heat stress risks of individuals and communities in fine-granular geographical areas will radically transform UHI research and efforts to mitigate them. </p>
+                            
+                        </div>
+                        
+                    </div>
+                </section>
+                <section class="feature">
+                    <div class="row 200%">
+                        <div class="4u 12u$(medium)">
+                            <span class="image fit rounded">
+                                <img src="images/2.jpg" alt="" class="rounded">
+                            </span>
+                        </div>
+                        <div class="8u$ 12u$(medium)">
+                            <header class="major">
+                                <a name="applications"><h2>Real World Applications</h2></a>
+                                <p>Heat Exposure &amp; Safety</p>
+                            </header>
+                            <p>The findings from this study will be extremely useful for understanding the heat exposure vulnerabilities of individual communities such as people living in poorly-planned neighborhoods, poor and elderly, city and municipal outdoor workers, construction workers, bus commuters, and mail delivery personnel. Furthermore, this study will lay the foundation for city/local government officials and business leaders to devise targeted and more efficacious heat hazard mitigation efforts such as increasing greenspace and developing better heat-safety policies for their workers.</p>
+                            
+                        </div>
+                    </div>
+                </section>
+                <section class="feature">
+                    <div class="row 200%"><div class="4u$ 12u$(medium) important(medium)">
+                            <span class="image fit rounded">
+                                <img src="images/3.jpg" alt="">
+                            </span>
+                        </div>
+                        <div class="8u 12u$(medium)">
+                            <header class="major">
+                                <a name="framework"><h2>IoT Based Framework</h2></a>
+                                <p>Network of Sensors</p>
+                            </header>
+                            <p>This research will build a scalable and robust smart-sensor-cloud framework for leveraging variety of human and vehicle-borne smart sensors (e.g., smartphones, environmental micro data loggers) in conjunction with traditional data sources (e.g., satellites and weather stations) for gathering, and analyzing accurate and fine-grained temperature information for urban areas as well as specific urban communities. </p>
+                            
+                        </div>
+                        
+                    </div>
+                </section>
+                
+            </div>
+        </section>
+
+    <!-- Two -->
+        <section id="main">
+            <div class="container">
+            <section>
+
+                        <!--  <div id="header" class="alt">
+                        <h1 id="logo"><a href="index.html">People</a></h1>
+                        </div> =-->
+
+                        
+                        <div class="box alt">
+                        
+                            <header class="major">
+                                    <a name="people"><h2>People</h2></a>
+                            </header>
+                                
+                            <div class="row 80% uniform">
+                                
+                                <!-- <div class="4u"><span class="image fit"><img src="images/thumbs/1.jpg" alt=""></span></div> -->
+
+                                
+                                <div class="4u"><span class="image fit"><img src="images/thumbs/1.jpg" alt="">
+                                <center><h4><b><a href="http://geography.uga.edu/directory/profile/mishra-deepak/" target="_blank"><u>Dr Deepak Mishra</u><br><font size="1">  (Dept of Geography)</font></a></b></h4></center>  
+                                </span></div>
+
+                                
+                                <div class="4u"><span class="image fit"><img src="images/thumbs/2.jpg" alt="">
+                                <center><h4><b><a href="http://cobweb.cs.uga.edu/~laks/" target="_blank"><u>Dr Lakshmish Ramaswamy</u><br><font size="1">  (Dept of Computer Science)</font></a></b></h4></center>  
+                                </span></div>
+                                
+                                <div class="4u$"><span class="image fit"><img src="images/thumbs/3.jpg" alt="">
+                                <center><h4><b><a href="http://geography.uga.edu/directory/profile/grundstein-andrew-j/" target="_blank"><u>Dr Andrew Grundstein</u><br><font size="1">  (Dept of Geography)</font> </a></b></h4></center>  
+                                </span></div>
+                                
+                                <div class="4u"><span class="image fit"><img src="images/thumbs/4.jpg" alt="">
+                                <center><h4><b><a href="http://cobweb.cs.uga.edu/~hashemi/" target="_blank"><u>Navid Hashemi</u><br><font size="1">  (PhD - Computer Science)</font> </a></b></h4></center>  
+                                </span></div>
+                                
+                                <div class="4u"><span class="image fit"><img src="images/thumbs/7.png" alt="">
+                                <center><h4><b><a href="https://www.linkedin.com/in/yanzhe/" target="_blank"><u>Yanzhe Yin</u><br><font size="1">   (PhD Student - Geography)</font></a></b></h4></center>  
+                                </span></div>
+
+                                <div class="4u$"><span class="image fit"><img src="images/thumbs/6.jpg" alt="">
+                                <center><h4><b><a href="" target="_blank"><u>Himanshu Pendyala</u><br><font size="1">  (MSc Student - Computer Science)</font></a></b></h4></center>  
+                                </span></div>
+                                
+                                <div class="4u"><span class="image fit"><img src="images/thumbs/5.jpg" alt="">
+                                <center><h4><b><a href="https://www.linkedin.com/in/sujeet-kulkarni-3a1a361a/" target="_blank"><u>Sujeet Kulkarni</u><br><font size="1">   (MSc Student - Computer Science)</font></a></b></h4></center>  
+                                </span></div>
+                                
+                                
+                                
+                            </div>
+                        </div>
+
+                        <!--publications-->
+                        <div class="box alt">
+                        
+                            <header class="major">
+                                    <a name="publications"><h2>Publications</h2></a>
+                            </header>
+                                
+                            <div class="row 80% uniform">
+                                
+                                <!-- <div class="4u"><span class="image fit"><img src="images/thumbs/1.jpg" alt=""></span></div> -->
+
+                                
+                            <h3>Papers</h3>
+                            <ul>
+                                <li>Navid Hashemi, Lakshmish Ramaswamy, Deepak Mishra, Sorush Omidvar, <a href="https://arxiv.org/abs/2002.08886">"Spatio-Temporal Coverage Enhancement in Drive-By Sensing Through Utility-Aware Mobile Agent Selection"</a>, 21st IEEE International Conference on Mobile Data Management, Versailles, France <i>[submitted]</i></li>
+                                <li>Navid Hashemi, Lakshmish Ramaswamy, Sakshi Sachdev, <a href="https://www.researchgate.net/publication/335225784_A_Mobile_and_Web-Based_Approach_for_Targeted_and_Proactive_Participatory_Sensing">“A Mobile and Web-based Approach for Targeted and Proactive Participatory Sensing”</a>, 15th EAI International Conference on Collaborative Computing: Networking, Applications and Worksharing, London, Great Britain, 2019</li>
+                                <li>Navid Hashemi, Lakshmish Ramaswamy, D. Mishra, A. Grundstein, S. Kulkarni, Y. Yin, <a href="https://www.researchgate.net/publication/330719508_SCOUTS_A_Smart_Community_Centric_Urban_Heat_Monitoring_Framework">“SCOUTS: A Smart Community Centric Urban Heat Monitoring Framework”</a>, ACM SIGSPATIAL Workshop on Advances in Resilient and Intelligent Cities, Seattle, Washington, 2018</li>
+                                <li>Navid Hashemi, Sujeet Kulkarni, Lakshmish Ramaswamy, <a href="https://www.researchgate.net/publication/330717005_Edge-Based_Anomalous_Sensor_Placement_Detection_for_Participatory_Sensing_of_Urban_Heat_Islands">“Edge-Based Anomalous Sensor Placement Detection for Participatory Sensing of Urban Heat Islands”</a>, 4th IEEE Annual International Smart Cities Conference, Kansas City, Missouri, 2018</li>
+                            </ul>
+                            <h3>Posters</h3>
+                            <ul>
+                                <li>Yin, Y., Navid Hashemi, A. Grundstein, D. Mishra, and L. Ramaswamy, “Individual-borne Heat Monitoring Sensors and Applications”, poster presentation at American Geophysical Union (AGU) meeting, Washington, D.C., 2018</li>
+                                <li>Navid Hashemi, Lakshmish Ramaswamy, S. Kulkarni, H. Pendyala, D. Mishra, “Urban Thermal Sensing”, 19th International Workshop on Mobile Computing Systems and Applications (HotMobile’18), Tempe, AZ, 2018</li>
+                                <li>Grundstein A., D. Mishra, L. Ramaswamy, Navid Hashemi, Y. Yin, “Personalized Heat Exposure Monitoring Using Sensor Cloud Based Framework: Preliminary Results”, Center for Disease Control (CDC) - GIS Day, Atlanta, GA, 2017</li>
+                            </ul>
+                        </div>	
+                        <!--/publications-->
+                        
+                        <!--workshops-->
+                        <div class="box alt">
+                        
+                            <header class="major">
+                                                                            <a name="workshops"><h2>Workshops</h2></a>
+                                                            </header>
+                            <div>
+
+                            <ul>
+                                <li>Urban Environmental Sustainability in a Smart and Connected World workshop (MPE 2013+), In Collaboration with the Center for Discrete Mathematics and Theoretical Computer Science at Rutgers University, Athens, GA, 2018</li>
+                            </ul>
+                        
+                            </div>
+                        </div>
+                        
+
+                        <!--community resources-->
+                        <!--
+                        <div class="box alt">
+                        <br /> <br />
+                            <header class="major">
+                                    <a name="community"><h2>Community Resources</h2></a>
+                            </header>
+                                
+                            <div class="row 80% uniform">
+                        <div class="table-wrapper">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Website</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="http://www.nws.noaa.gov/os/heat/">National Weather Service</a></td>
+                                        <td>Heat Safety Tips and Resources</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="https://www.cdc.gov/disasters/extremeheat/">Natural Disasters and Severe Weather</a></td>
+                                        <td>Extreme Heat</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="https://www.osha.gov/SLTC/heatstress/">United States Department of Labor</a></td>
+                                        <td> Occupational Safety and Health Administration</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    
+                                </tfoot>
+                            </table>
+                        </div>
+                        </div>
+                        </div>
+                        -->
+                        <!--/coummunity resources-->
+
+            </div></section>
+            </div>    
+        </section>
+
+
+    <!-- Footer -->
+        <div id="footer">
+            <div class="container">
+                <div class="row 200% uniform">
+                    <section class="4u 12u$(medium) 12u$(small)">
+                        
+                    </section>
+                    <section class="4u 6u(medium) 12u$(small)">
+                        <header class="major">
+                            <a name="contact"><h2>Contact Us</h2></a>
+                        </header>
+                        <ul class="labeled-icons">
+                            <li>
+                                <h4 class="icon fa-envelope"><span class="label">Email</span></h4>
+                                <a href="#">scouts@uga.edu</a>
+                            </li>
+                            <li>
+                                <h4 class="icon fa-phone"><span class="label">Phone</span></h4>
+                                706-542-8927
+                            </li>
+                            <li>
+                                <h4 class="icon fa-home"><span class="label">Address</span></h4>
+                                The University of Georgia
+                                <br>Franklin College of Arts &amp; Sciences 
+                                <br> Department of Geography
+                                <br>210 Field Street, Rm 313
+                                <br>Athens, Georgia 30602
+                            </li>
+                        </ul>
+                    </section>
+                    
+                    <section class="4u$ 6u$(medium) 12u$(small)">
+                        
+                    </section>
+                </div>
+            </div>
+            <div class="copyright">
+                ©   All rights reserved.
+            </div>
+        </div>
+
+    <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/skel.min.js"></script>
+        <script src="assets/js/jquery.dropotron.min.js"></script>
+        <script src="assets/js/jquery.onvisible.min.js"></script>
+        <script src="assets/js/jquery.poptrox.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+        <script src="assets/js/main.js"></script>
+
+
+
+<div id="titleBar"><a href="#navPanel" class="toggle"></a><span class="title">Urban Heat Analysis</span></div><div id="navPanel"><nav><a class="link depth-0" href="#overview" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="indent-0"></span>Overview</a><a class="link depth-0" href="#people" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="indent-0"></span>People</a><a class="link depth-0" href="#publications" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="indent-0"></span>Publications</a><a class="link depth-0" href="#workshops" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="indent-0"></span>Workshops</a><a class="link depth-0" href="#contact" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="indent-0"></span>Contact US</a></nav></div><div id="new-tab-sidebar" class="hidden"><div class="wrap">
+    <img class="new-tab-logo" src="chrome-extension://meffljleomgifbbcffejnmhjagncfpbd/img/128x128.png">
+    
+<ul></ul></div></div></body><div class="sidekick-slider" style="z-index: 2147483647 !important; position: fixed;"></div><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
