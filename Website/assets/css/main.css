@@ -2582,7 +2582,7 @@ input[type="submit"].special,
 input[type="reset"].special,
 input[type="button"].special,
 .button.special {
-  background-color: #cd4f4f;
+  background-color: #cd814f;
   color: #ffffff !important;
 }
 
@@ -2958,7 +2958,7 @@ body.landing .dropotron.level-0:before {
 #banner {
   padding: 11em 0 8em 0;
   background-attachment: scroll, fixed;
-  background-image: url("images/overlay.png"), url("../../images/banner.jpg");
+  background-image: url("images/overlay.png"), url("../../images/Saplo\ Island.jpg");
   background-position: center center;
   background-size: cover;
   line-height: 2;
